@@ -2,17 +2,17 @@ import { mostPicked } from "@/constants/data";
 
 const MostPicked = () => {
   return (
-    <section>
+    <section className="pt-16">
       <div className="container">
         <div>
-          <h3 className="text-2xl font-medium">Most Picked</h3>
+          <h3 className="text-2xl font-medium ">Most Picked</h3>
         </div>
 
-        <div className="mt-8 grid lg:grid-cols-12 gap-8">
+        <div className="mt-4 lg:mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
           {mostPicked.slice(0, 1).map((item) => (
             <div
               key={item.id}
-              className="relative col-span-4 bg-gray-300 rounded-2xl">
+              className="relative size-full sm: lg:col-span-4 rounded-2xl">
               <img
                 src={item.image}
                 alt=""
@@ -34,11 +34,11 @@ const MostPicked = () => {
             </div>
           ))}
 
-          <div className="col-span-8 flex flex-wrap gap-8">
+          <div className="lg:col-span-8 flex flex-col lg:flex-row lg:flex-wrap gap-8">
             {mostPicked.slice(1).map((item) => (
               <div
                 key={item.id}
-                className="relative w-[348px] h-[215px] bg-gray-300 rounded-2xl">
+                className="relative size-full lg:w-[348px] lg:h-[215px] rounded-2xl">
                 <img
                   src={item.image}
                   alt=""
