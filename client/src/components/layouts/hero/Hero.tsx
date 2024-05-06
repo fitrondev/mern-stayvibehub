@@ -4,8 +4,8 @@ import heroImg from "@/assets/images/hero.jpg";
 
 const Hero = () => {
   return (
-    <section>
-      <div className="container h-[calc(100vh-80px)] flex items-center justify-center">
+    <section className="py-6 lg:py-0">
+      <div className="container lg:h-[calc(100vh-80px)] flex items-center justify-center">
         <div className="lg:h-[460px] grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[130px]">
           <div className="h-full flex flex-col justify-between sm:items-center sm:justify-center lg:items-start lg:justify-between gap-5 sm:gap-8 lg:gap-0 sm:order-2 lg:order-1 ">
             <div className="space-y-6 sm:space-y-8 sm:flex sm:flex-col items-center justify-center lg:block">
