@@ -1,9 +1,6 @@
-import { Button } from "@/components/ui/button";
+import RootLayout from "./layouts/RootLayout";
 
-export default function Home() {
-  return (
-    <div>
-      <Button>Click me</Button>
-    </div>
-  );
-}
+const App = () => {
+  return <RootLayout />;
+};
+export default App;
